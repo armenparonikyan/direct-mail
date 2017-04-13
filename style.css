@@ -5,9 +5,15 @@ body{
 	font-family: 'WisdomScript';
 	src:url('fonts/Wisdom Script.otf');
 }
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('fonts/ProximaNovaRegular.eot');
+	src: local('ProximaNovaRegular'), url('fonts/ProximaNovaRegular.woff') format('woff'), url('fonts/ProximaNovaRegular.ttf') format('truetype');
+}
 .links{
 	font-size:20px;
 	text-align: right;
+	font-family: 'ProximaNovaRegular';
 }
 .uppercase{
 	text-transform: uppercase;
@@ -72,7 +78,7 @@ body{
 }
 #input{
 	width: 25%;
-	padding:0.5%;
+	padding:1.5%;
 	border:1px solid #000;
 	border-radius:15px;
 	text-align: center;
@@ -176,8 +182,14 @@ body{
 }
 .footer-top{
 	z-index:10;
+	margin-top:5%;
 }
 .effort_text_sm{
 	font-size:13px;
 }
-
+.description{
+	margin-top:3%;
+}
+.email{
+	padding:10px;
+}
