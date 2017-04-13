@@ -1,3 +1,10 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+@font-face{
+	font-family: 'WisdomScript';
+	src:url('fonts/Wisdom Script.otf');
+}
 .links{
 	font-size:20px;
 	text-align: right;
@@ -14,9 +21,9 @@
 .links > a{
 	color:#000;
 	margin:5px;
+	font-size:16px;
 }
 .image{
-	height:400px;
 	background-image: url('img/image1.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -35,17 +42,15 @@
 	margin:0px;
 }
 .main-text{
-	font-size:77px;
-}
-.nkar{
-	height:35px;
+	font-size:123px;
+	line-height: 0.6;
 }
 .transparent-button{
 	background-color: rgba(0,0,0,0);
 	color:white;
 }
 .top-spaced{
-	margin-top:3%;
+	margin:7% 0px;
 }
 .offers{
 	margin: 0px;
@@ -73,11 +78,12 @@
 	text-align: center;
 }
 .pink_button{
-	background-color: #981d6b;
+	background-color: #e3007a;
 	color:white;
+	font-size: 29px;
 	margin-top:4%;
-	width:25%;
 	border-radius:15px;
+	padding: 14px 38px;
 }
 .footer{
 	margin:0px;
@@ -86,6 +92,7 @@
 #footer_nkar{
 	position :absolute;
 	width:100%;
+	z-index: 1;
 }
 #footer_nkar > img{
 	width:100%;
@@ -96,6 +103,9 @@
 }
 #with{
 	font-family: 'WisdomScript';
+	text-transform: lowercase;
+	font-size:38px;
+	margin:0px 1%;
 }
 #foo_image{
 	margin:3% 0px;
@@ -110,15 +120,28 @@
 .well{
 	font-size:20px;
 	text-align: center;
+	background-color: white;
+	border:0px;
 }
 .big_button{
 	font-size:120%;
+	margin:3% 0px;
+	letter-spacing: 0;
+	color:#000;
+	font-size:14px;
+	border-radius: 10px;
+	border:1px #000 solid;
 }
 .big_button1{
 	font-size:180%;
+	border:3px solid #FFF;
+	border-radius:10px;
+	font-size:28px;
+	padding: 12px 36px;
+	margin-bottom:3%;
 }
 .small-text{
-	font-size:40px;
+	font-size:39px;
 }
 #adv_pic{
 	width:100%;
@@ -133,3 +156,28 @@
 .first{
 	margin-bottom:4%;
 }
+.footer_text{
+	color:#333;
+	font-size:49px;
+}
+.effort_text{
+	font-size:37px;
+}
+.line{
+	border-top:3px solid #FFF;
+	height:3px;
+	margin-bottom:1%;
+	width:28%;
+	display: inline-block;
+}
+.line_sec{
+	width:75%;
+	margin-top:6%;
+}
+.footer-top{
+	z-index:10;
+}
+.effort_text_sm{
+	font-size:13px;
+}
+
