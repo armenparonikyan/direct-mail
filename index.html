@@ -9,14 +9,14 @@
 <body>
 	<div class="container">
 		<div class="row navbar uppercase">
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-2 col-xs-2">
 				<div class="logo">
-					<h1>Logo</h1>
+					<img src="img/logo.png">
 				</div>
 			</div>
 			<div class="col-md-10">
 				<div class="button">
-					<a class="btn btn-default" href="#" role="button">Schedule a free demo</a>
+					<a class="btn btn-default big_button" href="#" role="button">Schedule a free demo</a>
 				</div>
 				<div class="links">
 					<a href="#">Home</a>
@@ -26,6 +26,38 @@
 					<a href="#">FAQ</a>
 					<a href="#">Contact us</a>
 				</div>
+				<div class="button menu-icon invisible">
+					<a class="btn btn-default transparent-button" role='button' data-toggle="collapse" aria-expanded="false" aria-controls="collapseMenu" href="#collapseMenu">
+						<img src="img/menu-icon.png" id="menu-icon-img">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="collapse" id="collapseMenu">
+			<div class="well">			
+				<div>
+					<a href="#">Home</a>
+				</div>
+				<hr>
+				<div>
+					<a href="#">How it works</a>
+				</div>
+				<hr>
+				<div>
+					<a href="#">About us</a>
+				</div>
+				<hr>
+				<div>
+					<a href="#">Case studies</a>
+				</div>
+				<hr>
+				<div>
+					<a href="#">FAQ</a>
+				</div>
+				<hr>
+				<div>
+					<a href="#">Contact us</a>
+				</div>
 			</div>
 		</div>
 		<div class="image uppercase container">
@@ -33,38 +65,76 @@
 				<h3>Effortlessly combine your client's</h3>
 				<div class="row">
 					<div class="com-md-4">
-						<span class="main-text bold">Direct Mail</span>
+						<span class="main-text bold" id="main-text">Direct Mail</span>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="nkar col-md-6 col-md-offset-3">Nkar</div>
+					<div class="nkar col-md-6 col-md-offset-3"><span id="with">With</span></div>
 				</div>
 				<div class="row">
-					<div class="nkar col-md-6 col-md-offset-3">Nkar</div>
+					<div class="nkar col-md-6 col-md-offset-3"><img id="adv_pic" src="img/dm_line.png"></div>
 				</div>
 				<div class="row top-spaced">
-					<a class="btn btn-default transparent-button" href="#" role="button">Schedule a free demo</a>
+					<a class="btn btn-default transparent-button big_button1" href="#" role="button">Schedule a free demo</a>
 				</div>
 			</div>
 		</div>
 		<hr>
 		<div class="row offers uppercase">
-			<div class="col-md-3 bold">
-				<div class="offer_nkar"></div>
+			<div class="col-md-3 col-xs-3 col-sm-3 bold">
+				<div class="offer_nkar">
+					<img src="img/icon1.png" id="foo_image">
+				</div>
 				<div class="text">Real Time Tracking</div>
 			</div>
-			<div class="col-md-3 bold">
-				<div class="offer_nkar"></div>
+			<div class="col-md-3 col-xs-3 col-sm-3 bold">
+				<div class="offer_nkar">
+					<img src="img/icon2.png">
+				</div>
 				<div class="text">Proven Profitable</div>
 			</div>
-			<div class="col-md-3 bold">
-				<div class="offer_nkar"></div>
+			<div class="col-md-3 col-xs-3 col-sm-3 bold">
+				<div class="offer_nkar">
+					<img src="img/icon3.png">
+				</div>
 				<div class="text">Marketing Tools</div>
 			</div>
-			<div class="col-md-3 bold">
-				<div class="offer_nkar"></div>
+			<div class="col-md-3 col-xs-3 col-sm-3 bold">
+				<div class="offer_nkar">
+					<img src="img/icon4.png">
+				</div>
 				<div class="text">Quick & easy setup</div>
+			</div>
+		</div>
+		<div class="offers_small uppercase invisible">
+			<div class="row first">
+				<div class="col-md-6 col-xs-6 col-sm-6 bold">
+					<div class="offer_nkar">
+						<img src="img/icon1.png" id="foo_image">
+					</div>
+					<div class="text">Real Time Tracking</div>
+				</div>
+				<div class="col-md-6 col-xs-6 col-sm-6 bold">
+					<div class="offer_nkar">
+						<img src="img/icon2.png">
+					</div>
+					<div class="text">Proven Profitable</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-xs-6 col-sm-6 bold">
+					<div class="offer_nkar">
+						<img src="img/icon3.png">
+					</div>
+					<div class="text">Marketing Tools</div>
+				</div>
+				<div class="col-md-6 col-xs-6 col-sm-6 bold">
+					<div class="offer_nkar">
+						<img src="img/icon4.png">
+					</div>
+					<div class="text">Quick & easy setup</div>
+				</div>
 			</div>
 		</div>
 		<hr>
@@ -73,11 +143,15 @@
 				<h1 style="color:#79d879;">Call Tracking</h1>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="col-md-5 big_nkar"></div>
+			<div class="col-md-5 big_nkar">	
+				<img src="img/home_image1.png">
+			</div>
 		</div>
 		<hr>
 		<div class="row">
-			<div class="col-md-5 col-md-offset-1 big_nkar"></div>
+			<div class="col-md-5 col-md-offset-1 big_nkar">
+				<img src="img/home_image2.png">
+			</div>
 			<div class="col-md-5 description">
 				<h1 style="color:#981d6b;">Mail Tracking</h1>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -89,10 +163,17 @@
 				<h1 style="color:#e88c38;">Online Follow Up</h1>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="col-md-5 big_nkar"></div>
+			<div class="col-md-5 big_nkar">
+				<img src="img/home_image3b.png">
+			</div>
 		</div>
 		<hr>
+	</div>
+	<div class="container-fluid">
 		<div class="row text footer">
+			<div id="footer_nkar">	
+				<img src="img/footer.png">
+			</div>
 			<h1 class="bold">See It Live in Action!</h1>
 			<div>
 				<input type="email" name="email" id="input" value="ENTER YOUR EMAIL ADRESS">
@@ -101,7 +182,13 @@
 				<a class="btn pink_button uppercase bold" href="#" role="button">Schedule a free demo</a>
 			</div>
 		</div>
-	</div>	
+	</div>
 
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
