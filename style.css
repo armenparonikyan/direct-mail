@@ -88,9 +88,10 @@ body{
 	background-color: #e3007a;
 	color:white;
 	font-size: 29px;
+	width:33%;
 	margin-top:3%;
 	border-radius:15px;
-	padding: 14px 38px;
+	padding: 1% 2%;
 }
 .footer{
 	margin:0px;
