@@ -1,4 +1,4 @@
-$(window).resize(()=>{
+const check = function(){
 	let w = window.innerWidth;
 	let h = window.innerHeight;
 	if(w <= 1000){
@@ -24,4 +24,8 @@ $(window).resize(()=>{
 		$('.big_button1').css('font-size','28px');
 		$('.pink_button').css('font-size','29px');
 	}
+}
+check();
+$(window).resize(()=>{
+	check();
 });

@@ -34,7 +34,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	color:white;
-	padding:6% 0px 0px 0px;
+	padding:8% 0px 0px 0px;
 	margin:0px;
 }
 .logo >img{
@@ -56,7 +56,7 @@ body{
 	color:white;
 }
 .top-spaced{
-	margin:7% 0px;
+	margin:7% 0px 3% 0px;
 }
 .offers{
 	margin: 0px;
