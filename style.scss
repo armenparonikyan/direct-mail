@@ -10,42 +10,52 @@ body{
 	src: url('fonts/ProximaNovaRegular.eot');
 	src: local('ProximaNovaRegular'), url('fonts/ProximaNovaRegular.woff') format('woff'), url('fonts/ProximaNovaRegular.ttf') format('truetype');
 }
-.links{
-	font-size:20px;
-	text-align: right;
-	font-family: 'ProximaNovaRegular';
-}
-.uppercase{
-	text-transform: uppercase;
-}
-.bold{
-	font-weight: bolder;
-}
-.button{
+@mixin text-right {
 	text-align: right;
 }
-.links > a{
-	color:#000;
-	margin:5px;
-	font-size:16px;
+.uppercase {
+	text-transform:uppercase;
 }
-.image{
-	background-image: url('img/image1.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	color:white;
-	padding:8% 0px 0px 0px;
+.bold {
+	font-weight:bolder;
+}
+@mixin noMargin{
 	margin:0px;
 }
-.logo >img{
-	width:100%;
-	height:100%;
+.button{
+	@include text-right;
+}
+.links{
+	@include text-right;
+	font-size:20px;
+	font-family: 'ProximaNovaRegular';
+	a {
+		color:#000;
+		margin:5px;
+		font-size:16px;
+	}
+}
+.image{
+	background: {
+		image: url('img/image1.png');
+		repeat: no-repeat;
+		size: cover;
+	}
+	color:white;
+	padding:8% 0px 0px 0px;
+	@include noMargin;
+}
+.logo{
+	img{
+		width:100%;
+		height:100%;
+	}
 }
 .text{
 	text-align:center;
-}
-.text >h3{
-	margin:0px;
+	h3{
+		@include noMargin;
+	}
 }
 .main-text{
 	font-size:123px;
@@ -59,22 +69,24 @@ body{
 	margin:7% 0px 3% 0px;
 }
 .offers{
-	margin: 0px;
+	@include noMargin;
 	text-align: center;
+	> div:not(:last-child){
+		border-right: solid #eee 0.5px;
+	}
 }
-.offer_nkar > img{
-	height: 100%;
-	width:auto;
-}
-.offers > div:not(:last-child){
-	border-right: solid #eee 0.5px; 
+.offer_nkar {
+	img{
+		height: 100%;
+		width:auto;
+	}
 }
 .big_nkar{
 	height:auto;
-}
-.big_nkar > img{
-	height:100%;
-	width: 100%;
+	img{
+		height:100%;
+		width: 100%;
+	}
 }
 #input{
 	width: 33%;
@@ -94,20 +106,19 @@ body{
 	padding: 1% 2%;
 }
 .footer{
-	margin:0px;
+	@include noMargin;
 	height:auto;
 }
 #footer_nkar{
 	position :absolute;
 	width:100%;
 	z-index: 1;
-}
-#footer_nkar > img{
-	width:100%;
+	img{
+		width:100%;
+	}
 }
 .container-fluid{
 	padding:0px;
-
 }
 #with{
 	font-family: 'WisdomScript';
@@ -132,7 +143,6 @@ body{
 	border:0px;
 }
 .big_button{
-	font-size:120%;
 	margin:3% 0px;
 	letter-spacing: 0;
 	color:#000;
@@ -141,7 +151,6 @@ body{
 	border:1px #000 solid;
 }
 .big_button1{
-	font-size:180%;
 	border:3px solid #FFF;
 	border-radius:10px;
 	font-size:28px;
@@ -155,8 +164,12 @@ body{
 	width:100%;
 	height:auto;
 }
-.offers_small > .row > div:not(:last-child){
-	border-right: solid #eee 0.5px; 
+.offers_small {
+	.row {
+		> div:not(:last-child){
+			border-right: solid #eee 0.5px; 
+		}
+	}
 }
 .offers_small{
 	text-align: center;

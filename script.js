@@ -25,7 +25,6 @@ const check = function(){
 		$('#main-text').addClass('main-text').removeClass('small-text');
 		$('.effort_text_sm').addClass('effort_text').removeClass('effort_text_sm');
 		$('.big_button1').css('font-size','28px');
-		//$('.pink_button').css('font-size','29px');
 	}
 }
 check();
